@@ -1,0 +1,322 @@
+{
+  "ru": {
+    "lang_name": "Русский",
+    "hero": {
+      "title": "1win Return to Player",
+      "subtitle_html": "Прокачай RTP уже сегодня <br> с 10.10.25 по 10.01.26.<br/>Повысь шансы на победу вместе с 1win",
+      "cta": "Подробнее"
+    },
+    "buttons": {
+      "learn_more": "Подробнее",
+      "check": "Проверить",
+      "participate": "Участвовать",
+      "play": "Играть",
+      "register_new": "Зарегистрировать новый",
+      "close": "Закрыть",
+      "ok": "Понятно",
+      "back": "Назад",
+      "all_prizes": "Все призы",
+      "increase_rtp": "Увеличить RTP",
+      "copy_hint": "Нажмите, чтобы скопировать",
+      "copied": "Скопировано!"
+    },
+    "toast": {
+      "invalid": "Введены не верные данные",
+      "no_access": "Доступ для участников по реф-ссылке и с промокодом"
+    },
+    "cards": {
+      "rtp": {
+        "title": "Проверь свой RTP",
+        "subtitle": "Узнай свой RTP за пару минут — и забери аккаунт с повышенным RTP уже сегодня",
+        "button": "Проверить"
+      },
+      "contest": {
+        "badge": "Конкурсы",
+        "title": "Получи свой приз",
+        "subtitle": "С 10 октября по 10 января. Чем больше играешь, тем выше шансы на победу",
+        "button": "Участвовать"
+      },
+      "gifts": {
+        "badge": "Подарки",
+        "title": "Отправь своё желание",
+        "subtitle": "Заполни простую форму и отправь её нам. Каждое 1 число месяца дарим то, что вы просите",
+        "button": "Отправить желание"
+      }
+    },
+    "geo": {
+      "ru": "Россия",
+      "ww": "Worldwide (EN)",
+      "in": "Индия",
+      "br": "Бразилия",
+      "es": "Испания",
+      "ui": "Украина",
+      "tr": "Турция",
+      "id": "Индонезия",
+      "fr": "Франция",
+      "ozbek": "Узбекистан",
+      "de": "Германия"
+    },
+    "gauge": {
+      "caption": "Процент RTP"
+    },
+    "result_modal": {
+      "title": "Результат проверки",
+      "name": "Имя",
+      "id": "ID Account",
+      "tg": "Telegram",
+      "geo": "ГЕО",
+      "note": "При повторных проверках значение RTP может незначительно меняться — это нормально. Мы учитываем актуальные параметры аккаунта и игры."
+    },
+    "boost_modal": {
+      "title": "Увеличить RTP",
+      "p1_html": "<b>Как повысить RTP?</b> Зарегистрируй новый аккаунт 1win по нашей ссылке. На свежих аккаунтах выше вероятность получить повышенный RTP и участвовать в розыгрышах.",
+      "p2_html": "Для участия используй <b>промокод</b> ниже — он активирует участие в конкурсах и подарках.",
+      "your_promo": "Ваш промокод",
+      "promo_note": "Промокод нужен, чтобы засчиталось участие в розыгрышах и активировались спец-условия. При следующем визите код может быть другим — так и задумано."
+    },
+    "participate_modal": {
+      "title": "Как участвовать",
+      "step1": "Жмите «Участвовать»",
+      "step2": "Ставьте в крашах от 38 ₽, множитель — от ×2.2",
+      "you_participate": "Вы участвуете",
+      "prizes": "Все призы",
+      "note": "Играйте активно в период акции — чем больше оборот и выше множители, тем больше шансов. Рейтинг обновляется регулярно, следите за прогрессом.",
+      "lb_title": "Лидерборд",
+      "lb_subtitle": "Рейтинг по сумме множителей",
+      "lb_hint": "обновляем ~каждый час",
+      "table": {
+        "place": "Место",
+        "player": "ID игрока",
+        "score": "Баллы"
+      }
+    },
+    "prizes_modal": {
+      "title": "Призы",
+      "fund": "Призовой фонд — 1 260 000 ₽",
+      "rows": [
+        ["1 место", "56 700 ₽"],
+        ["2 место", "50 400 ₽"],
+        ["3 место", "44 100 ₽"],
+        ["4 место", "37 800 ₽"],
+        ["5 место", "31 500 ₽"],
+        ["6–40 места", "15 120 ₽"],
+        ["41–75 места", "10 080 ₽"],
+        ["76–100 места", "6 300 ₽"]
+      ]
+    },
+    "terms": {
+      "title": "Правила и условия акции «1win Traffic Race»",
+      "html": "<p><b>Период акции:</b> 10 октября 2025 — 10 января 2026.</p><p><b>Как участвовать:</b> зарегистрируйте новый аккаунт по реф-ссылке, активируйте участие промокодом, играйте в краш-играх от 38 ₽ и ×2.2.</p><p><b>Очки и лидерборд:</b> по сумме множителей, обновление ориентировочно каждый час.</p><p><b>Призы:</b> фонд 1 260 000 ₽, распределение — в разделе «Все призы».</p><p>Участвуя, вы подтверждаете согласие с правилами.</p>"
+    }
+  },
+
+  "en": {
+    "lang_name": "English",
+    "hero": {
+      "title": "1win Return to Player",
+      "subtitle_html": "Boost your RTP today from 10.10.25 to 10.01.26.<br/>Increase your chances of winning with 1win",
+      "cta": "Learn more"
+    },
+    "buttons": {
+      "learn_more": "Learn more",
+      "check": "Check",
+      "participate": "Participate",
+      "play": "Play",
+      "register_new": "Register new",
+      "close": "Close",
+      "ok": "OK",
+      "back": "Back",
+      "all_prizes": "All prizes",
+      "increase_rtp": "Increase RTP",
+      "copy_hint": "Tap to copy",
+      "copied": "Copied!"
+    },
+    "toast": {
+      "invalid": "Entered data is invalid",
+      "no_access": "Access only for referrals with promo code"
+    },
+    "cards": {
+      "rtp": {
+        "title": "Check your RTP",
+        "subtitle": "Find out your RTP in minutes and get an account with boosted RTP today",
+        "button": "Check"
+      },
+      "contest": {
+        "badge": "Contests",
+        "title": "Claim your prize",
+        "subtitle": "Oct 10 – Jan 10. The more you play, the higher your chances to win",
+        "button": "Participate"
+      },
+      "gifts": {
+        "badge": "Gifts",
+        "title": "Send your wish",
+        "subtitle": "Fill a simple form and send it to us. On the 1st day of each month we gift what you ask for",
+        "button": "Send a wish"
+      }
+    },
+    "geo": {
+      "ru": "Russia",
+      "ww": "Worldwide (EN)",
+      "in": "India",
+      "br": "Brazil",
+      "es": "Spain",
+      "ui": "Ukraine",
+      "tr": "Türkiye",
+      "id": "Indonesia",
+      "fr": "France",
+      "ozbek": "Uzbekistan",
+      "de": "Germany"
+    },
+    "gauge": { "caption": "RTP percent" },
+    "result_modal": {
+      "title": "Check result",
+      "name": "Name",
+      "id": "ID Account",
+      "tg": "Telegram",
+      "geo": "GEO",
+      "note": "Upon repeated checks the RTP value may slightly change — that’s normal."
+    },
+    "boost_modal": {
+      "title": "Increase RTP",
+      "p1_html": "<b>How to boost RTP?</b> Register a new 1win account using our link. Fresh accounts have higher chance to get boosted RTP and take part in giveaways.",
+      "p2_html": "Use the <b>promo code</b> below — it enables giveaways and special perks.",
+      "your_promo": "Your promo code",
+      "promo_note": "Promo code is required to enroll into giveaways. It may change next time — by design."
+    },
+    "participate_modal": {
+      "title": "How to participate",
+      "step1": "Tap “Participate”",
+      "step2": "Play Crash from 38 ₽, multiplier — from ×2.2",
+      "you_participate": "You participate",
+      "prizes": "All prizes",
+      "note": "Play actively during the promo — the higher turnover & multipliers, the more chances.",
+      "lb_title": "Leaderboard",
+      "lb_subtitle": "Sum of multipliers",
+      "lb_hint": "updates about hourly",
+      "table": { "place": "Place", "player": "Player ID", "score": "Score" }
+    },
+    "prizes_modal": {
+      "title": "Prizes",
+      "fund": "Prize pool — 1,260,000 ₽",
+      "rows": [
+        ["1st place", "56,700 ₽"],
+        ["2nd place", "50,400 ₽"],
+        ["3rd place", "44,100 ₽"],
+        ["4th place", "37,800 ₽"],
+        ["5th place", "31,500 ₽"],
+        ["6–40 places", "15,120 ₽"],
+        ["41–75 places", "10,080 ₽"],
+        ["76–100 places", "6,300 ₽"]
+      ]
+    },
+    "terms": {
+      "title": "Terms and Conditions of “1win Traffic Race”",
+      "html": "<p><b>Promo period:</b> Oct 10, 2025 — Jan 10, 2026.</p><p><b>How to join:</b> register a new account via referral link, activate with promo code, play Crash from 38 ₽ and ×2.2.</p><p><b>Points & leaderboard:</b> sum of multipliers, updates ~hourly.</p><p><b>Prizes:</b> pool 1,260,000 ₽. Distribution — in “All prizes”.</p>"
+    }
+  },
+
+  "ui": {
+    "lang_name": "Українська",
+    "hero": {
+      "title": "1win Return to Player",
+      "subtitle_html": "Прокачай RTP вже сьогодні з 10.10.25 по 10.01.26.<br/>Збільшуй шанси на перемогу разом з 1win",
+      "cta": "Докладніше"
+    },
+    "buttons": {
+      "learn_more": "Докладніше",
+      "check": "Перевірити",
+      "participate": "Брати участь",
+      "play": "Грати",
+      "register_new": "Зареєструвати новий",
+      "close": "Закрити",
+      "ok": "Зрозуміло",
+      "back": "Назад",
+      "all_prizes": "Усі призи",
+      "increase_rtp": "Збільшити RTP",
+      "copy_hint": "Натисніть, щоб скопіювати",
+      "copied": "Скопійовано!"
+    },
+    "toast": {
+      "invalid": "Введені дані некоректні",
+      "no_access": "Доступ для учасників за реф-посиланням і з промокодом"
+    },
+    "cards": {
+      "rtp": {
+        "title": "Перевір свій RTP",
+        "subtitle": "Дізнайся свій RTP за кілька хвилин і отримай акаунт з підвищеним RTP",
+        "button": "Перевірити"
+      },
+      "contest": {
+        "badge": "Конкурси",
+        "title": "Отримай свій приз",
+        "subtitle": "З 10 жовтня по 10 січня. Чим більше граєш, тим вищі шанси на перемогу",
+        "button": "Брати участь"
+      },
+      "gifts": {
+        "badge": "Подарунки",
+        "title": "Надішли своє бажання",
+        "subtitle": "Заповни просту форму та надішли її нам. Щомісяця 1 числа даруємо те, що ви просите",
+        "button": "Надіслати бажання"
+      }
+    },
+    "geo": {
+      "ru": "Росія",
+      "ww": "Worldwide (EN)",
+      "in": "Індія",
+      "br": "Бразилія",
+      "es": "Іспанія",
+      "ui": "Україна",
+      "tr": "Туреччина",
+      "id": "Індонезія",
+      "fr": "Франція",
+      "ozbek": "Узбекистан",
+      "de": "Німеччина"
+    },
+    "gauge": { "caption": "Відсоток RTP" },
+    "result_modal": {
+      "title": "Результат перевірки",
+      "name": "Ім’я",
+      "id": "ID Account",
+      "tg": "Telegram",
+      "geo": "ГЕО",
+      "note": "За повторних перевірок значення RTP може трохи змінюватися — це нормально."
+    },
+    "boost_modal": {
+      "title": "Збільшити RTP",
+      "p1_html": "<b>Як підвищити RTP?</b> Зареєструй новий акаунт 1win за нашим посиланням. На свіжих акаунтах вищі шанси отримати підвищений RTP і брати участь у розіграшах.",
+      "p2_html": "Для участі використовуй <b>промокод</b> нижче — він активує розіграші та подарунки.",
+      "your_promo": "Ваш промокод",
+      "promo_note": "Промокод потрібен, щоб зарахувалася участь. Під час наступного входу код може змінюватися — так і задумано."
+    },
+    "participate_modal": {
+      "title": "Як брати участь",
+      "step1": "Натисни «Брати участь»",
+      "step2": "Грай у Crash від 38 ₽, множник — від ×2.2",
+      "you_participate": "Ви берете участь",
+      "prizes": "Усі призи",
+      "note": "Грайте активно протягом акції — більше оборот і множники — більше шансів.",
+      "lb_title": "Лідерборд",
+      "lb_subtitle": "Рейтинг за сумою множників",
+      "lb_hint": "оновлюємо ~щогодини",
+      "table": { "place": "Місце", "player": "ID гравця", "score": "Бали" }
+    },
+    "prizes_modal": {
+      "title": "Призи",
+      "fund": "Призовий фонд — 1 260 000 ₽",
+      "rows": [
+        ["1 місце", "56 700 ₽"],
+        ["2 місце", "50 400 ₽"],
+        ["3 місце", "44 100 ₽"],
+        ["4 місце", "37 800 ₽"],
+        ["5 місце", "31 500 ₽"],
+        ["6–40 місця", "15 120 ₽"],
+        ["41–75 місця", "10 080 ₽"],
+        ["76–100 місця", "6 300 ₽"]
+      ]
+    },
+    "terms": {
+      "title": "Правила та умови акції «1win Traffic Race»",
+      "html": "<p><b>Період акції:</b> 10 жовтня 2025 — 10 січня 2026.</p><p><b>Як долучитися:</b> новий акаунт за реф-посиланням, активація промокодом, Crash від 38 ₽ і ×2.2.</p><p><b>Очки:</b> сума множників, оновлення ~щогодини.</p><p><b>Призи:</b> фонд 1 260 000 ₽. Розподіл — у «Усі призи».</p>"
+    }
+  }
+}

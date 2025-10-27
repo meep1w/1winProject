@@ -1,0 +1,23 @@
+{
+  "lang.title": "Choose your language",
+  "lang.btn.ru": "🇷🇺 Русский",
+  "lang.btn.en": "🇬🇧 English",
+  "lang.btn.hi": "🇮🇳 हिन्दी",
+  "lang.btn.pt": "🇵🇹 Português",
+  "lang.btn.es": "🇪🇸 Español",
+  "lang.btn.ui": "🇺🇦 Українська",
+  "lang.btn.tr": "🇹🇷 Türkçe",
+  "lang.btn.in": "🇮🇩 Indonesia",
+  "lang.btn.fr": "🇫🇷 Français",
+  "lang.btn.ozbek": "🇺🇿 Oʻzbek",
+  "lang.btn.de": "🇩🇪 Deutsch",
+
+  "start.title": "Main menu",
+  "menu.btn.open_app": "🚀 Open App",
+  "menu.btn.support": "🛟 Support",
+  "menu.btn.site": "🌐 1win Website",
+  "menu.btn.token": "🪙 1winToken",
+
+  "info.title": "ℹ️ Information",
+  "info.text": "This bot opens the 1win mini-app, provides support and links. Command: /lang — change language."
+}

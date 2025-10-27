@@ -1,0 +1,32 @@
+# venv
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/
+
+# OS/OneDrive шум
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local env
+.env
+
+# SQLite и логи (храним локально)
+data/bot.db
+data/bot.db-shm
+data/bot.db-wal
+data/logs/
+
+# прочие временные
+*.log
+*.tmp

@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <title data-i18n="meta.title">1win Traffic Race</title>
+
+    <!-- Стили -->
+    <link rel="preload" href="./static/css/styles.css?v=10" as="style">
+    <link rel="stylesheet" href="./static/css/styles.css?v=10">
+
+    <!-- Telegram WebApp SDK -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+    <!-- i18n.js ДОЛЖЕН быть раньше main.js -->
+    <script src="./static/js/i18n.js"></script>
+
+    <!-- Основной скрипт -->
+    <script type="module" src="./static/js/main.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+</head>
+<body>
+<div id="app" class="app">
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo" role="img" aria-label="1win Partners logo">
+                <img src="./static/img/logo.svg" alt="1win RTP" />
+            </div>
+
+            <!-- Языки -->
+            <div class="lang" id="langDropdown">
+                <button class="lang__btn" id="langBtn" aria-haspopup="listbox" aria-expanded="false">
+                    <img class="lang__flag" id="langFlag" src="./static/img/flags/ru.svg" alt="RU">
+                    <span id="langCode">RU</span>
+                    <svg class="lang__caret" width="8" height="6" viewBox="0 0 8 6" aria-hidden="true">
+                        <path fill="#fff" d="M.234.334A.8.8 0 0 1 1.276.256l.09.078L4 2.968 6.634.334A.8.8 0 0 1 7.676.256l.09.078a.8.8 0 0 1 .077 1.042l-.077.09-3.2 3.2a.8.8 0 0 1-1.042.077l-.09-.078-3.2-3.2a.8.8 0 0 1 0-1.131Z" opacity=".5"/>
+                    </svg>
+                </button>
+                <ul class="lang__menu" id="langMenu" role="listbox" tabindex="-1" aria-label="Select language"></ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <main class="hero">
+        <div class="hero__bg" id="heroBg" aria-hidden="true"></div>
+
+        <div class="hero__content">
+            <h1 class="hero__title" id="title" data-i18n="hero.title">1win Return to Player</h1>
+            <p class="hero__subtitle" id="subtitle" data-i18n-html="hero.subtitle">
+                Лей по RS на 1win с 15.10 по 15.01<br/>и выиграй 1 из 333 призов
+            </p>
+        </div>
+
+        <div class="hero__bottom">
+            <button id="ctaBtn" class="btn btn--primary" data-i18n="hero.cta">Подробнее</button>
+        </div>
+    </main>
+
+    <!-- Карточки -->
+    <section class="rtp-stack" id="rtp-cards">
+        <div class="rtp-stack__container">
+            <h2 class="rtp-stack__title" data-i18n="cards.section_title">Проверь свой RTP</h2>
+
+            <div class="rtp-stack__list">
+                <!-- 1: Чеккер -->
+                <article class="rtp-card rtp-card--1">
+                    <img class="rtp-card__bg" src="./static/img/card_check.png" alt="">
+                    <div class="rtp-card__head">
+                        <span class="rtp-badge" data-i18n="cards.card1.badge">Чеккер</span>
+                        <button id="infoBtn" class="rtp-card__info" type="button" aria-label="Правила и условия" data-i18n-attr="aria-label:footer.terms_btn">
+                            <svg width="20" height="20" viewBox="0 0 1024 1024" aria-hidden="true">
+                                <path fill="#fff" d="M512 64c-247.4 0-448 200.6-448 448s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm32 664c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8V456c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v272zm-32-344a48 48 0 1 1 0-96 48 48 0 0 1 0 96z" opacity=".7"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="rtp-card__body">
+                        <h3 class="rtp-card__title" data-i18n="cards.card1.title">Проверить RTP</h3>
+                        <p class="rtp-card__subtitle" data-i18n="cards.card1.subtitle">Узнай какое RTP на твоём аккаунте. И забери аккаунт с повышенным RTP уже сейчас</p>
+                    </div>
+                    <div class="rtp-card__footer">
+                        <button class="rtp-card__btn" data-i18n="cards.card1.btn">Проверить</button>
+                    </div>
+                </article>
+
+                <!-- 2: Конкурсы -->
+                <article class="rtp-card rtp-card--2">
+                    <img class="rtp-card__bg" src="./static/img/card_contest.png" alt="">
+                    <div class="rtp-card__head">
+                        <span class="rtp-badge" data-i18n="cards.card2.badge">Конкурсы</span>
+                    </div>
+                    <div class="rtp-card__body">
+                        <h3 class="rtp-card__title" data-i18n="cards.card2.title">Получи свой приз</h3>
+                        <p class="rtp-card__subtitle" data-i18n="cards.card2.subtitle">С 10 октября по 10 января. Чем больше играешь, тем выше шансы на победу</p>
+                    </div>
+                    <div class="rtp-card__footer">
+                        <button class="rtp-card__btn" data-i18n="cards.card2.btn">Участвовать</button>
+                    </div>
+                </article>
+
+                <!-- 3: Подарки -->
+                <article class="rtp-card rtp-card--3">
+                    <img class="rtp-card__bg" src="./static/img/card_gift.png" alt="">
+                    <div class="rtp-card__head">
+                        <span class="rtp-badge" data-i18n="cards.card3.badge">Подарки</span>
+                    </div>
+                    <div class="rtp-card__body">
+                        <h3 class="rtp-card__title" data-i18n="cards.card3.title">Отправь своё желание</h3>
+                        <p class="rtp-card__subtitle" data-i18n="cards.card3.subtitle">Заполни простую форму и отправь её нам. Каждое 1 число месяца дарим то, что вы просите</p>
+                    </div>
+                    <div class="rtp-card__footer">
+                        <button class="rtp-card__btn" data-i18n="cards.card3.btn">Отправить желание</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="faq__bg" aria-hidden="true"></div>
+
+        <div class="faq__container">
+            <h2 class="faq__title" data-i18n="faq.title">Ответы на вопросы</h2>
+
+            <ul class="accordion" id="faqList">
+                <li class="accordion__item">
+                    <button class="accordion__btn" aria-expanded="false">
+                        <span class="accordion__q" data-i18n="faq.q1">Кто может участвовать в акции?</span>
+                        <svg class="accordion__caret" width="8" height="6" viewBox="0 0 8 6" aria-hidden="true">
+                            <path fill="#fff" d="M.234.334A.8.8 0 0 1 1.276.256l.09.078L4 2.968 6.634.334A.8.8 0 0 1 7.676.256l.09.078a.8.8 0 0 1 .077 1.042l-.077.09-3.2 3.2a.8.8 0 0 1-1.042.077l-.09-.078-3.2-3.2a.8.8 0 0 1 0-1.131Z" opacity=".5"/>
+                        </svg>
+                    </button>
+                    <div class="accordion__panel">
+                        <p data-i18n="faq.a1">Все RevShare-партнёры 1win Partners, зарегистрировавшиеся на лендинге и выполнившие условия акции.</p>
+                    </div>
+                </li>
+
+                <li class="accordion__item">
+                    <button class="accordion__btn" aria-expanded="false">
+                        <span class="accordion__q" data-i18n="faq.q2">Что нужно сделать, чтобы получить шанс выиграть приз?</span>
+                        <svg class="accordion__caret" width="8" height="6" viewBox="0 0 8 6" aria-hidden="true">
+                            <path fill="#fff" d="M.234.334A.8.8 0 0 1 1.276.256l.09.078L4 2.968 6.634.334A.8.8 0 0 1 7.676.256l.09.078a.8.8 0 0 1 .077 1.042l-.077.09-3.2 3.2a.8.8 0 0 1-1.042.077l-.09-.078-3.2-3.2a.8.8 0 0 1 0-1.131Z" opacity=".5"/>
+                        </svg>
+                    </button>
+                    <div class="accordion__panel">
+                        <p data-i18n="faq.a2">Лить трафик в период акции и выполнять KPI. Чем выше оборот и активность, тем больше шансов.</p>
+                    </div>
+                </li>
+
+                <li class="accordion__item">
+                    <button class="accordion__btn" aria-expanded="false">
+                        <span class="accordion__q" data-i18n="faq.q3">Если я не добрал 500 FTD в первый месяц, я вылетаю?</span>
+                        <svg class="accordion__caret" width="8" height="6" viewBox="0 0 8 6" aria-hidden="true">
+                            <path fill="#fff" d="M.234.334A.8.8 0 0 1 1.276.256l.09.078L4 2.968 6.634.334A.8.8 0 0 1 7.676.256l.09.078a.8.8 0 0 1 .077 1.042l-.077.09-3.2 3.2a.8.8 0 0 1-1.042.077l-.09-.078-3.2-3.2a.8.8 0 0 1 0-1.131Z" opacity=".5"/>
+                        </svg>
+                    </button>
+                    <div class="accordion__panel">
+                        <p data-i18n="faq.a3">Нет. Условия считаются по каждому периоду отдельно. Можно наверстать показатели в следующий месяц.</p>
+                    </div>
+                </li>
+
+                <li class="accordion__item">
+                    <button class="accordion__btn" aria-expanded="false">
+                        <span class="accordion__q" data-i18n="faq.q4">Я могу выиграть несколько призов в разные месяцы?</span>
+                        <svg class="accordion__caret" width="8" height="6" viewBox="0 0 8 6" aria-hidden="true">
+                            <path fill="#fff" d="M.234.334A.8.8 0 0 1 1.276.256l.09.078L4 2.968 6.634.334A.8.8 0 0 1 7.676.256l.09.078a.8.8 0 0 1 .077 1.042l-.077.09-3.2 3.2a.8.8 0 0 1-1.042.077l-.09-.078-3.2-3.2a.8.8 0 0 1 0-1.131Z" opacity=".5"/>
+                        </svg>
+                    </button>
+                    <div class="accordion__panel">
+                        <p data-i18n="faq.a4">Да, розыгрыши независимы. Участвуйте каждый месяц и увеличивайте шансы.</p>
+                    </div>
+                </li>
+
+                <li class="accordion__item">
+                    <button class="accordion__btn" aria-expanded="false">
+                        <span class="accordion__q" data-i18n="faq.q5">Где узнать результаты розыгрыша?</span>
+                        <svg class="accordion__caret" width="8" height="6" viewBox="0 0 8 6" aria-hidden="true">
+                            <path fill="#fff" d="M.234.334A.8.8 0 0 1 1.276.256l.09.078L4 2.968 6.634.334A.8.8 0 0 1 7.676.256l.09.078a.8.8 0 0 1 .077 1.042l-.077.09-3.2 3.2a.8.8 0 0 1-1.042.077l-.09-.078-3.2-3.2a.8.8 0 0 1 0-1.131Z" opacity=".5"/>
+                        </svg>
+                    </button>
+                    <div class="accordion__panel">
+                        <p data-i18n="faq.a5">Публикуем в официальных каналах 1win Partners и уведомляем победителей лично.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__divider" aria-hidden="true"></div>
+        <div class="footer__container">
+            <div class="footer__head">
+                <img class="footer__logo" src="./static/img/logo.svg" alt="1win Partners">
+                <div class="footer__soc">
+                    <a class="footer__soc-link" href="#" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#B0B1B2" d="M7.465 1.066C8.638 1.012 9.012 1 12 1c2.988 0 3.362.013 4.534.066c1.172.053 1.972.24 2.672.511c.733.277 1.398.71 1.948 1.27c.56.549.992 1.213 1.268 1.947c.272.7.458 1.5.512 2.67C22.988 8.639 23 9.013 23 12c0 2.988-.013 3.362-.066 4.535c-.053 1.17-.24 1.97-.512 2.67a5.396 5.396 0 0 1-1.268 1.949c-.55.56-1.215.992-1.948 1.268c-.7.272-1.5.458-2.67.512c-1.174.054-1.548.066-4.536.066c-2.988 0-3.362-.013-4.535-.066c-1.17-.053-1.97-.24-2.67-.512a5.397 5.397 0 0 1-1.949-1.268a5.392 5.392 0 0 1-1.269-1.948c-.271-.7-.457-1.5-.511-2.67C1.012 15.361 1 14.987 1 12c0-2.988.013-3.362.066-4.534c.053-1.172.24-1.972.511-2.672a3.413 3.413 0 0 1 1.27-1.948a5.392 5.392 0 0 1 1.947-1.269c.7-.271 1.5-.457 2.67-.511"/></svg>
+                        </svg>
+                    </a>
+                    <a class="footer__soc-link" href="#" aria-label="Telegram">
+                        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#B0B1B2" d="m20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42l10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001l-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15l4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434"/></svg>
+                        </svg>
+                    </a>
+                    <a class="footer__soc-link" href="#" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 1000 1000"><path fill="#B0B1B2" d="M196.064.25C88.347.25.187 88.408.187 196.127v607.841c0 107.717 88.158 195.845 195.877 195.845h607.841c107.718 0 195.845-88.127 195.845-195.845V196.127C999.75 88.41 911.623.25 803.905.25zm49.266 164.948c51.648 0 83.461 33.906 84.443 78.475c0 43.585-32.797 78.444-85.442 78.444h-.969c-50.665 0-83.412-34.857-83.412-78.444c0-44.568 33.738-78.475 85.379-78.475zm445.08 208.31c99.329 0 173.79 64.922 173.79 204.436v260.449H713.247V595.406c0-61.06-21.847-102.718-76.476-102.718c-41.704 0-66.562 28.078-77.476 55.202c-3.987 9.704-4.967 23.257-4.967 36.832v253.671H403.375s1.981-411.613 0-454.233h150.984v64.324c20.06-30.95 55.942-74.977 136.051-74.977zm-521.556 10.685h150.953v454.202H168.854z"/></svg>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <button id="footerTermsBtn" class="footer__button" type="button" data-i18n="footer.terms_btn">Правила и условия</button>
+            <p class="footer__copyright" data-i18n="footer.copy">© 2025 1win. Все права защищены</p>
+        </div>
+    </footer>
+</div>
+
+<!-- Модалка: Правила -->
+<div id="termsModal" class="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <section class="modal__sheet" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
+        <header class="modal__header">
+            <h3 id="modalTitle" data-i18n="terms.title">Правила и условия акции «1win Traffic Race»</h3>
+            <button class="modal__x" type="button" aria-label="Закрыть" data-close>✕</button>
+        </header>
+        <div class="modal__content" id="modalContent"><!-- terms заполняем из JS/i18n --></div>
+        <div class="modal__footer">
+            <button class="btn btn--primary modal__ok" type="button" data-close data-i18n="common.ok">Понятно</button>
+        </div>
+    </section>
+</div>
+
+<!-- Модалка: форма RTP -->
+<div id="rtpModal" class="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <section class="modal__sheet" role="dialog" aria-modal="true" aria-labelledby="rtpModalTitle" tabindex="-1">
+        <header class="modal__header">
+            <h3 id="rtpModalTitle" data-i18n="rtp_form.title">Заполни форму</h3>
+            <button class="modal__x" type="button" aria-label="Закрыть" data-close>✕</button>
+        </header>
+
+        <form id="rtpForm" class="form modal__content" novalidate>
+            <div class="form__group">
+                <label class="form__label" data-i18n="rtp_form.name_label">Имя</label>
+                <input id="f_name" class="form__input" type="text" placeholder="Имя" data-i18n-attr="placeholder:rtp_form.name_ph" required>
+            </div>
+
+            <div class="form__group">
+                <label class="form__label" data-i18n="rtp_form.account_label">ID Account</label>
+                <input id="f_account" class="form__input" type="text" inputmode="numeric" placeholder="ID аккаунта" data-i18n-attr="placeholder:rtp_form.account_ph" required>
+            </div>
+
+            <div class="form__group">
+                <label class="form__label" data-i18n="rtp_form.tg_label">Telegram</label>
+                <input id="f_tg" class="form__input" type="text" placeholder="@username" data-i18n-attr="placeholder:rtp_form.tg_ph" required>
+            </div>
+
+            <div class="form__group">
+                <label class="form__label" data-i18n="rtp_form.geo_label">ГЕО</label>
+
+                <button id="geoBtn" class="select" type="button" aria-haspopup="listbox" aria-expanded="false">
+                    <img class="select__flag" id="geoFlag" alt="" hidden>
+                    <span id="geoLabel" data-i18n="rtp_form.geo_ph">ГЕО</span>
+                    <svg class="select__caret" width="10" height="8" viewBox="0 0 8 6" aria-hidden="true">
+                        <path fill="#9aa3b2" d="M.234.334A.8.8 0 0 1 1.276.256l.09.078L4 2.968 6.634.334A.8.8 0 0 1 7.676.256l.09.078a.8.8 0 0 1 .077 1.042l-.077.09-3.2 3.2a.8.8 0 0 1-1.042.077l-.09-.078-3.2-3.2a.8.8 0 0 1 0-1.131Z"/>
+                    </svg>
+                </button>
+
+                <ul id="geoMenu" class="select__menu" role="listbox" tabindex="-1" aria-label="Select GEO"></ul>
+                <input id="f_geo" name="geo" type="hidden" required>
+            </div>
+        </form>
+
+        <div class="modal__loader" id="rtpLoader">
+            <div class="spinner"></div>
+            <div class="loader__text" data-i18n="rtp_form.loading">Проверяем…</div>
+        </div>
+
+        <div class="modal__footer">
+            <button id="rtpSubmit" class="btn btn--primary modal__ok" type="button" data-i18n="rtp_form.submit">Проверить</button>
+        </div>
+    </section>
+</div>
+
+<!-- Модалка результата -->
+<div id="resultModal" class="modal modal--65" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <section class="modal__sheet" role="dialog" aria-modal="true" aria-labelledby="resultTitle" tabindex="-1">
+        <header class="modal__header">
+            <h3 id="resultTitle" data-i18n="result.title">Результат проверки</h3>
+            <button class="modal__x" type="button" aria-label="Закрыть" data-close>✕</button>
+        </header>
+        <div class="modal__content"><!-- наполняем из JS --></div>
+        <div class="modal__footer">
+            <button class="btn btn--primary modal__ok" type="button" data-close data-i18n="common.ok">Понятно</button>
+        </div>
+    </section>
+</div>
+
+<!-- Модалка повышения RTP -->
+<div id="boostModal" class="modal modal--65" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <section class="modal__sheet" role="dialog" aria-modal="true" aria-labelledby="boostTitle">
+        <header class="modal__header">
+            <h3 id="boostTitle" data-i18n="boost.title">Увеличить RTP</h3>
+            <button class="modal__x" type="button" aria-label="Закрыть" data-close>✕</button>
+        </header>
+        <div class="modal__content"><!-- наполняем из JS --></div>
+        <div class="modal__footer">
+            <button class="btn btn--primary modal__ok" type="button" data-close data-i18n="common.ok">Понятно</button>
+        </div>
+    </section>
+</div>
+
+<!-- Тост -->
+<div id="pageToast" class="toast" role="status" aria-live="polite"></div>
+
+<!-- Модалка: Как участвовать -->
+<div id="participateModal" class="modal modal--65" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <section class="modal__sheet" role="dialog" aria-modal="true" aria-labelledby="partTitle" tabindex="-1">
+        <header class="modal__header">
+            <h3 id="partTitle" data-i18n="participate.title">Как участвовать</h3>
+            <button class="modal__x" type="button" aria-label="Закрыть" data-close>✕</button>
+        </header>
+        <div class="modal__content" id="participateContent"><!-- наполняем из JS --></div>
+        <div class="modal__footer">
+            <button class="btn btn--primary modal__ok" type="button" data-close data-i18n="common.close">Закрыть</button>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
