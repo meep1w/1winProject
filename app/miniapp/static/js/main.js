@@ -778,7 +778,6 @@ document.addEventListener('click', (e) => {
   .btn.btn--primary{
     background:linear-gradient(180deg,#3b82f6 0%, #2563eb 100%) !important;
     color:#fff !important; border:none !important;
-    box-shadow:0 10px 28px rgba(37,99,235,.35);
   }
   .btn.btn--primary:active{ transform:translateY(1px) }
   `;
